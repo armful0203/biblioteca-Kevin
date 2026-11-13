@@ -67,7 +67,7 @@ public class LibroService {
     }
 
     public Optional<Libro> prestar(int id) {
-        return libroRepository.findById(id).filter(libro -> libro.isEstado()).map(libro -> libro.setEstado(false);return libroRepository.save(libro);});
+        return libroRepository.findById(id).filter(libro -> libro.isEstado()).map(libro -> libro.setEstado(false));return libroRepository.save(libro);});
 
     }
     public Optional<Libro> devolver(int id) {
@@ -83,5 +83,3 @@ public class LibroService {
 
 
 
-
-}
